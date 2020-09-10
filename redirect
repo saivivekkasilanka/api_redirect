@@ -1,0 +1,23 @@
+Sir, unable to complete the given question because we never worked on fastify.js and I tried hard to develop the api but can't able to do it sir. 
+Thank you for your consideration sir.
+
+Sir I know how to use URL module in node.js
+ 
+example code:
+var fs = require('fs'),
+    http = require('http');
+
+http.createServer(function (req, res) {
+  fs.readFile('abc.txt' + req.url, function (err,data) {
+    if (err) {
+      res.writeHead(404);
+      res.end(JSON.stringify(err));
+      return;
+    }
+    res.writeHead(200);
+    res.end(data);
+  });
+}).listen(8080);
+
+
+in 11th line we have a file named abc.txt whatever content saved on file will be printed on the web browser
